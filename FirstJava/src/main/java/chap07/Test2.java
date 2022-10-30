@@ -18,7 +18,7 @@ public class Test2 {
             int com = random.nextInt(3) + 1; //1~3까지 출력
             
             System.out.printf("컴퓨터 : %d\n", com);
-            String result = (you - com) == 0 ? "비김" : (you - com) == -1 ? "패" : "승";
+            String result = (you - com) == 0 ? "비김" : ((you - com) == -1 || (you - com) == 2) ? "패" : "승";
             System.out.printf("결과 : %s\n", result);
             System.out.print("숫자를 입력하세요 : ");
         }
